@@ -6,6 +6,7 @@
     "author": "Herman Fassett",
     "dependencies": {
         "express": "latest",
-        "request": "latest"
+        "request": "latest",
+        "cors": "^2.8.5"
     }
 }
