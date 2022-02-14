@@ -1,7 +1,15 @@
 const express = require('express');
 const scraper = require('./scraper')
 const app = express();
+const cors = require('cors');
 
+app.use(
+  cors({
+    origin: 'https://aplicalltd.herokuapp.com',
+    methods: ['POST', 'DELETE', 'PUT', 'GET', 'OPTIONS', 'HEAD'],
+    credentials: true,
+  })
+);
 //Home page
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/index.html");
