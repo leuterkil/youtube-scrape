@@ -3,6 +3,10 @@
     "version": "0.1.5",
     "description": "Scrape YouTube searches",
     "main": "server.js",
+      "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "npm install && npm run build"
+  },
     "author": "Herman Fassett",
     "dependencies": {
         "express": "latest",
